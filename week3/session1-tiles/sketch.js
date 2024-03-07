@@ -24,9 +24,9 @@ function drawTile(across, down, step){
   noFill()
   for(let k=0; k<numSquares; k++){
     let r=random(10)
-    fill(random(0,255), random(0,255), random(0,200))
+    fill(255, 105, 180)
     if(r<5){
-      ellipse(0,0,step*k/numSquares)
+      rect(0,0,step*k/numSquares)
     }
   }
   
