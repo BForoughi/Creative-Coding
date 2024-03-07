@@ -4,7 +4,7 @@ let numAcross=10
 function setup(){
   createCanvas(windowWidth, windowHeight);
   step=width/numAcross
-  frameRate(10)
+  frameRate(5)
 }
 
 function draw(){
@@ -31,7 +31,8 @@ function drawTile(across, down, step){
       fill(137,207,240)
     }
     if(r<5){
-      rect(0,0,step*k/numSquares)
+      
+      ellipse(0,0,step*k/random(50,1))
     }
   }
   
