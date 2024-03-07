@@ -24,7 +24,12 @@ function drawTile(across, down, step){
   noFill()
   for(let k=0; k<numSquares; k++){
     let r=random(10)
-    fill(255, 105, 180)
+    
+    if(r<3){
+      fill(255, 105, 180)
+    } else{
+      fill(0,0,0)
+    }
     if(r<5){
       rect(0,0,step*k/numSquares)
     }
