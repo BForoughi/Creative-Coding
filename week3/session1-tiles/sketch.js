@@ -28,7 +28,7 @@ function drawTile(across, down, step){
     if(r<3){
       fill(255, 105, 180)
     } else{
-      fill(0,0,0)
+      fill(137,207,240)
     }
     if(r<5){
       rect(0,0,step*k/numSquares)
